@@ -24,6 +24,10 @@ class Triangle extends Polygon {
 
 class Square extends Polygon {
   get isValid() {
-    if (this.perimeter / 4 === this.sides[0])
+    if (this.perimeter / 4 === this.sides[0]) {
+      return true
+    } else {
+      return false
+    }
   }
 }
